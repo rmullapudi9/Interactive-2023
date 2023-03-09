@@ -9,6 +9,21 @@ body {
   src: url('fonts/BaseMonoWideThin_6014.ttf') format('truetype');
 }
 
+h1 {
+      font-family: 'BaseMono';
+      margin: 1.5em 1.5em 1em 1.5em;
+    }
+
+            h2 {
+      font-family: 'BaseMono';
+      margin: 1.5em 1.5em 1em 1.5em;
+    }
+
+        
+         .p {
+        font-family: 'BaseMono';
+    }
+
 
 #draggable-1{
 	height: 400px;
