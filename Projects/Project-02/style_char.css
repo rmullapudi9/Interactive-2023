@@ -1,0 +1,167 @@
+
+body {
+  background-color: black;
+  color: white;
+}
+
+@font-face {
+  font-family: 'BaseMono';
+  src: url('fonts/BaseMonoWideThin_6014.ttf') format('truetype');
+}
+
+
+#draggable-1{
+	height: 400px;
+	display: inline-block;
+    margin: 30px;
+}
+
+
+#draggable-2{
+	height: 400px;
+	display: inline-block;
+    margin: 30px;
+}
+
+#draggable-3{
+	height: 150px;
+	display: inline-block;
+    margin: 30px;
+}
+
+
+#draggable-4{
+	height: 400px;
+    display: inline-block;
+    margin: 30px;
+}
+
+
+#draggable-5{
+	height: 400px;
+    display: inline-block;
+    margin: 30px;
+}
+
+
+#draggable-6{
+	height: 400px;
+    display: inline-block;
+    margin: 30px;
+}
+
+
+#draggable-7{
+	height: 450px;
+    display: inline-block;
+    margin: 30px;
+}
+
+
+#draggable-8{
+	height: 400px;
+    display: inline-block;
+    margin: 30px;
+}
+
+
+#draggable-9{
+	height: 400px;
+    display: inline-block;
+    margin: 30px;
+}
+
+
+#draggable-10{
+	height: 400px;
+    display: inline-block;
+    margin: 30px;
+}
+
+
+#draggable-11{
+	height: 400px;
+    display: inline-block;
+    margin: 30px;
+}
+
+#draggable-12{
+	height: 150px;
+    display: inline-block;
+    margin: 30px;
+}
+
+#draggable-13{
+	height: 400px;
+    display: inline-block;
+    margin: 30px;
+}
+
+
+#draggable-14{
+	height: 400px;
+    display: inline-block;
+    margin: 30px;
+}
+
+#draggable-15{
+	height: 400px;
+    display: inline-block;
+    margin: 30px;
+}
+
+#draggable-16{
+	height: 400px;
+    display: inline-block;
+    margin: 30px;
+}
+
+#draggable-17{
+	height: 400px;
+    display: inline-block;
+     margin: 1.5em;
+}
+
+#draggable-18{
+	height: 400px;
+    display: inline-block;
+    margin: 1.5em;
+}
+
+
+#draggable-19{
+	height: 500px;
+    display: inline-block;
+}
+
+#draggable-20{
+	height: 200px;
+    display: inline-block;
+}
+
+#draggable-21{
+	height: 200px;
+    display: inline-block;
+}
+
+#draggable-22{
+	height: 300px;
+    display: inline-block;
+     margin: 1.5em;
+}
+
+#draggable-23{
+	height: 600px;
+    display: inline-block;
+}
+
+#draggable-24{
+	height: 500px;
+    display: inline-block;
+     margin: 1.5em;
+}
+
+.image-container:hover img {
+    transform: scale(1.3);
+}
+

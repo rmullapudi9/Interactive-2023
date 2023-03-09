@@ -1,0 +1,51 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+@font-face {
+  font-family: 'BaseMono';
+  src: url('fonts/BaseMonoWideThin_6014.ttf') format('truetype');
+}
+
+#draggable-1{
+	height: 600px;
+	display: inline-block;
+    margin: 15px;
+}
+
+#draggable-2{
+	height: 600px;
+	display: inline-block;
+    margin: 15px;
+}
+
+#draggable-3{
+	height: 600px;
+	display: inline-block;
+    margin:15px;
+}
+
+
+.image-container {
+  position: relative;
+}
+
+.image-text {
+font-family: 'BaseMono';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .image-text {
+  opacity: 0;
+}
+
+p{
+	color: white;
+}
+

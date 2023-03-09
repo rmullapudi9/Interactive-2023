@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Recreating RRV:Background 1</title>
+<link rel="stylesheet" href="style_bg1.css" />
+    
+    <style>
+        
+     
+     </style>
+    
+</head>
+    
+    
+    
+    
+<body>
+   <center> <div class="phppot-container">
+       
+      <h1>Background 1</h1> 
+        
+ <div id="center-portion">
+           <img id="draggable" src="BG2.png"> <p style="font-size: 17px; line-height: 30px;"> Drag and drop the characters of your choice to your background to create your rendition of a Raja Ravi Varma painting. Click the "Save" button below to screenshot your work and don't forget to save it! Enjoy! </p></div>
+        
+        <div id="draggable-1"><img id="draggable-1" src="Damayanti.png" ondragstart="drag(event)"></div>
+        
+        <div id="draggable-2"><img id="draggable-1" src="dattatreya.png" ondragstart="drag(event)"></div>
+        
+        <div id="draggable-4"><img id="draggable-4" src="GangaBhishma.png" ondragstart="drag(event)"></div>
+                
+        <div id="draggable-20"><img id="draggable-20" src="harihara1.png" ondragstart="drag(event)"></div>
+
+        <div id="draggable-5"><img id="draggable-5" src="Jatayu%20Vadham.png" ondragstart="drag(event)"></div>
+        
+        <div id="draggable-6"><img id="draggable-6" src="Kadambari.png" ondragstart="drag(event)"></div>
+        
+        <div id="draggable-7"><img id="draggable-7" src="Krishna.png" ondragstart="drag(event)"></div>
+        
+        <div id="draggable-8"><img id="draggable-8" src="Krishnaraja%20Wadiyar%20IV%20%20Jayalakshamanni%20%20Krishnarajamanni%20.png" ondragstart="drag(event)"></div>
+
+        <div id="draggable-18"><img id="draggable-18" src="fruits.png" ondragstart="drag(event)"></div>
+        
+        <div id="draggable-9"><img id="draggable-9" src="Mahaprabha.png" ondragstart="drag(event)"></div>
+
+        <div id="draggable-10"><img id="draggable-10" src="Radha.png" ondragstart="drag(event)"></div>
+
+        <div id="draggable-11"><img id="draggable-11" src="Radha%202.png" ondragstart="drag(event)"></div>
+
+        <div id="draggable-12"><img id="draggable-12" src="Swan.png" ondragstart="drag(event)"></div>
+
+        <div id="draggable-13"><img id="draggable-13" src="varmabirthshakuntala.png" ondragstart="drag(event)"></div>
+
+        <div id="draggable-14"><img id="draggable-14" src="varmashakuntala.png" ondragstart="drag(event)"></div>
+
+        <div id="draggable-3"><img id="draggable-3" src="Dog.png" ondragstart="drag(event)"></div> 
+       
+        <div id="draggable-15"><img id="draggable-15" src="varmaurvashipururavas.png" ondragstart="drag(event)"></div>
+                
+        <div id="draggable-16"><img id="draggable-16" src="Begum.png" ondragstart="drag(event)"></div>
+       
+        <div id="draggable-21"><img id="draggable-21" src="harihara2.png" ondragstart="drag(event)"></div>
+        
+        <div id="draggable-17"><img id="draggable-17" src="Madri.png" ondragstart="drag(event)"></div>
+        
+        <div id="draggable-19"><img id="draggable-19" src="kaliyamardan.png" ondragstart="drag(event)"></div>
+                       
+        <div id="draggable-24"><img id="draggable-24" src="saraswatidevi.png" ondragstart="drag(event)"></div>
+       
+        <div id="draggable-22"><img id="draggable-22" src="NairLady.png" ondragstart="drag(event)"></div>
+                
+        <div id="draggable-23"><img id="draggable-23" src="Mohini.png" ondragstart="drag(event)"></div>         
+
+
+
+       
+        <br>
+        
+            
+            <button id="capture-screenshot" style="background-color: black;
+                        color: white; 
+                        border: 1px solid white; 
+                        font-family: 'BaseMono';
+                        font-size:25px;
+                        padding: 10px 20px;
+                        display: inline-block;
+                        margin: 1.5em;">PRINT</button>
+       
+       <button style="background-color: black;
+                       color: white; 
+                       border: 1px solid white; 
+                       font-family: 'BaseMono';
+                       font-size:25px;
+                       padding: 10px 20px;
+                       margin: 1.5em 3em 1em 1.5em;
+                       ">
+            <a href="RRV_Character.html">NEXT</a>
+        </button>
+       
+       <h2> *** SCROLL DOWN TO SAVE THE SCREENSHOT *** </h2> <div id="output"></div>
+      
+    </div> </center>
+
+    
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"
+    src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script type="text/javascript">  
+        $('#capture-screenshot').click(function() {
+            const screenshotTarget = document.body;
+            html2canvas(screenshotTarget).then(canvas => {
+            	// to image as png use below line
+                // const base64image = canvas.toDataURL("image/png");
+            	// show the image in window use below line
+                // window.location.href = base64image;
+            	
+            	// screenshot appended to the body as canvas
+                document.getElementById('output').appendChild(canvas);  
+                dataURL = canvas.toDataURL();  
+                // to print the screenshot in console use below line
+                // console.log(dataURL);
+                
+                // following line is optional and it is to save the screenshot
+                // on the server side. It initiates an ajax call
+                pushScreenshotToServer(dataURL); 
+            });  
+        });
+  
+        function pushScreenshotToServer(dataURL) {  
+            $.ajax({ 
+                url: "push-screenshot.php",  
+                type: "POST",  
+                data: {  
+                    image: dataURL  
+                },  
+                dataType: "html", 
+                success: function() {  
+                	console.log('Screenshot pushed to server.');
+                }  
+            });  
+        }  
+        
+        </script>
+    
+    
+            <!--Link to jQuery UI CSS-->
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+		<!--Link to jQuery UI libraries-->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    
+    <script>
+        
+        $( function() {
+    	$("#draggable-1").draggable();
+
+    	$("#draggable-2").draggable();
+        
+        $("#draggable-3").draggable();
+
+        $("#draggable-4").draggable();
+
+        $("#draggable-5").draggable();
+
+        $("#draggable-6").draggable();
+
+        $("#draggable-7").draggable();
+
+        $("#draggable-8").draggable();
+
+        $("#draggable-9").draggable();
+
+        $("#draggable-10").draggable();
+
+        $("#draggable-11").draggable();
+
+        $("#draggable-12").draggable();
+
+        $("#draggable-13").draggable();
+
+        $("#draggable-14").draggable();
+
+        $("#draggable-15").draggable();
+        
+        $("#draggable-16").draggable();
+        
+        $("#draggable-17").draggable();
+
+        $("#draggable-18").draggable();
+
+        $("#draggable-19").draggable();
+
+        $("#draggable-20").draggable();
+        
+        $("#draggable-21").draggable();
+            
+        $("#draggable-22").draggable();
+
+        $("#draggable-23").draggable();
+        
+        $("#draggable-24").draggable();
+        
+        $("#droppable-1").droppable({
+    		drop: function(event, ui){
+    			$(this)
+    			.addClass("dropped")
+    			.find("p")
+    			.html("Correct!");
+    		}
+            
+  	});
+});
+        
+ </script>       
+        
+   
+        
+   
+</body>
+</html>

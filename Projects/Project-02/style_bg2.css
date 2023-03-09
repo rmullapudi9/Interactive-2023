@@ -1,0 +1,179 @@
+
+body {
+  background-color: black;
+  color: white;
+}
+
+@font-face {
+  font-family: 'BaseMono';
+  src: url('fonts/BaseMonoWideThin_6014.ttf') format('truetype');
+}
+
+
+#draggable{
+	height: 700px;
+	display: inline-block;
+    margin: 15px;
+    border: auto;
+    border: 1px solid ;
+    padding: 50px;
+}
+
+#draggable-1{
+	height: 600px;
+	display: inline-block;
+    margin: 100px,100px,100px,100px;
+}
+
+#draggable-2{
+	height: 500px;
+	display: inline-block;
+    padding: 30px;
+}
+
+#draggable-3{
+	height: 250px;
+	display: inline-block;
+}
+
+
+#draggable-4{
+	height: 500px;
+    display: inline-block;
+}
+
+
+#draggable-5{
+	height: 500px;
+    display: inline-block;
+     padding: 30px;
+}
+
+
+#draggable-6{
+	height: 550px;
+    display: inline-block;
+    
+}
+
+
+#draggable-7{
+	height: 500px;
+    display: inline-block;
+}
+
+
+#draggable-8{
+	height: 500px;
+    display: inline-block;
+}
+
+
+#draggable-9{
+	height: 500px;
+    display: inline-block;
+}
+
+
+#draggable-10{
+	height: 500px;
+    display: inline-block;
+}
+
+
+#draggable-11{
+	height: 500px;
+    display: inline-block;
+}
+
+#draggable-12{
+	height: 150px;
+    display: inline-block;
+}
+
+#draggable-13{
+	height: 550px;
+    display: inline-block;
+}
+
+
+#draggable-14{
+	height: 450px;
+    display: inline-block;
+}
+
+#draggable-15{
+	height: 500px;
+    display: inline-block;
+}
+
+#draggable-16{
+	height: 500px;
+    display: inline-block;
+}
+
+#draggable-17{
+	height: 400px;
+    display: inline-block;
+     margin: 1.5em;
+}
+
+#draggable-18{
+	height: 90px;
+    display: inline-block;
+    margin: 1.5em;
+}
+
+
+#draggable-19{
+	height: 500px;
+    display: inline-block;
+}
+
+#draggable-20{
+	height: 200px;
+    display: inline-block;
+}
+
+#draggable-21{
+	height: 200px;
+    display: inline-block;
+}
+
+#draggable-22{
+	height: 300px;
+    display: inline-block;
+     margin: 1.5em;
+}
+
+#draggable-23{
+	height: 600px;
+    display: inline-block;
+}
+
+#draggable-24{
+	height: 500px;
+    display: inline-block;
+     margin: 1.5em;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+@media print{
+    div#center-portion img{
+        width: 100%;
+    }
+    
+    div#draggable-1{
+        position: absolute;
+    }
+}
