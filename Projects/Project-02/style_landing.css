@@ -5,7 +5,7 @@ body {
 
 @font-face {
       font-family: 'BaseMono';
-      src: url('BaseMonoWideThin_6014.ttf') format('truetype');
+      src: url('fonts/BaseMonoWideThin_6014.ttf') format('truetype');
     }
 
 .h1 {
