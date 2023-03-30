@@ -9,6 +9,10 @@ body {
   src: url('fonts/BaseMonoWideThin_6014.ttf') format('truetype');
 }
 
+         .p {
+        font-family: 'BaseMono';
+    }
+
 .image-container {
     resize: both;
     border: none;

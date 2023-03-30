@@ -9,6 +9,9 @@ body {
   src: url('fonts/BaseMonoWideThin_6014.ttf') format('truetype');
 }
 
+         .p {
+        font-family: 'BaseMono';
+    }
 
 #draggable{
 	height: 700px;
