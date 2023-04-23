@@ -1,0 +1,86 @@
+@import url();
+
+body {
+    background: lightblue;
+}
+
+.container{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.shape{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+@media screen and (max-width:768px) and (orientation:landscape) {
+    
+    body{
+        background-color: lightpink;
+    }
+    
+    .container{
+        flex-direction: row;
+    }
+    
+    .shape{
+        width:100%;
+        height:100%;
+        border-radius: 10%;
+        background-color: mintcream;
+    }
+}
+/* Text
+-------------------------------------------------- */
+
+
+
+/* Image
+-------------------------------------------------- */
+
+
+
+/* iPad 
+-------------------------------------------------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+  /* text */
+
+
+  /* image */
+
+}
+
+/* Mobile
+-------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+  /* text */
+
+  /* image */
+
+}
+
+
+/* Orientation
+-------------------------------------------------- */
+
+@media (orientation: landscape) {
+
+  /* text */
+
+  /* image */
+
+}
+
+
