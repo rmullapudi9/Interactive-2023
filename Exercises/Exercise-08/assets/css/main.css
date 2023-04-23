@@ -1,0 +1,195 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: azure;
+}
+
+
+/* if you want to change the background of your canvas, do it here */
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: skyblue;
+	position: relative;
+	border: solid skyblue 5px;
+}
+
+
+
+/* this is where you can style the objects in your still life */
+
+.candle1{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 335px;
+	left: 280px;
+	box-shadow: 0 0 20px lightblue;
+}
+
+.candle2{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 348px;
+	left: 260px;
+	box-shadow: 0 0 20px lightblue;
+}
+
+.candle7{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 348px;
+	left: 230px;
+	box-shadow: 0 0 20px lightblue;
+}
+
+.candle3{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 378px;
+	left: 220px;
+	box-shadow: 0 0 20px lightblue;
+}
+
+.candle4{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 388px;
+	left: 300px;
+	box-shadow: 0 0 20px lightblue;
+}
+
+.candle8{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 388px;
+	left: 380px;
+	box-shadow: 0 0 20px lightblue;
+}
+.candle5{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 348px;
+	left: 380px;
+	box-shadow: 0 0 20px lightblue;
+}
+
+.candle6{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 348px;
+	left: 350px;
+	box-shadow: 0 0 20px lightblue;
+}
+
+.fire{
+	width: 20px;
+	height: 75px;
+	border-radius: 50%;
+	background: radial-gradient(circle at top left, #FFC300, #CE2024);
+	position: absolute;
+	top: 300px;
+	left: 345px;
+	transition: background 1s ease;
+    animation: flicker 1s infinite;
+}
+
+.fire:hover{
+	background: radial-gradient(circle at bottom right, #ee82ee, #B7E8EB);
+}
+
+
+@keyframes flicker {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+
+.vase1 {
+  position: absolute;
+  top: 180px;
+  left: 465px;
+  width: 280px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+}
+
+.vase2 {
+  position: absolute;
+  top: 35px;
+  left: 530px;
+  width: 150px;
+  height: 175px;
+  background-color: rgba(255, 255, 255, 0.6);
+    	border-bottom: 250px;
+
+}
+
+.vase3 {
+  position: absolute;
+  top: 20px;
+  left: 530px;
+  width: 150px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;  opacity: 0.6;
+}
+
+.dirt {
+	position: absolute;
+	top: 350px;
+	left: 480px;
+	width: 250px;
+	height: 165px;
+	background-color: saddlebrown;
+	border-radius:0 0 290px 290px;
+    filter: blur(3px);
+	z-index: +1;
+}
+
+.plant {
+	position: absolute;
+	top: 300px;
+	left: 600px;
+	width: 20px;
+	height: 105px;
+	background-color: green;
+	border-radius:0 0 290px 290px;
+    filter: blur(3px);
+	z-index: +2;
+}
