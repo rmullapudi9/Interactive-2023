@@ -1,0 +1,91 @@
+body{
+	background: black;
+    background-image: url(https://static.wikia.nocookie.net/naruto-ultimate-ninja-storm/images/3/32/Naruto_%28Kid%29.png/revision/latest?cb=20210319172525);
+    background-size: cover;
+}
+
+.container{
+    font-family: sans-serif;
+    display: flex;
+    font-size: 100px;
+    color: white;
+}
+
+.kakashi { display: none; }
+.jiraiya { display: none; }
+
+@media screen and (max-width:768px) and (orientation:portrait){
+	body{
+	background: #460683;
+    background-image: url(https://i.pinimg.com/originals/c2/74/69/c2746933f6733812bdaa9ac04b1136a3.png);
+    background-size: cover;
+}
+
+.container{
+    font-family: sans-serif;
+    display: flex;
+    font-size: 100px;
+    color: white;
+}
+
+.kakashi { display: inline-block; }
+.naruto { display: none; }
+.jiraiya { display: none; }
+}
+
+@media screen and (max-width:320px) and (orientation:portrait){
+	body{
+	background: #B3002B;
+    background-image: url(https://www.pngmart.com/files/13/Naruto-Jiraiya-PNG-Transparent-HD-Photo.png);
+    background-size: cover;
+}
+
+.container{
+    font-family: sans-serif;
+    display: flex;
+    font-size: 100px;
+    color: white;
+}
+
+.kakashi { display: none; }
+.naruto { display: none; }
+.jiraiya { display: inline-block; }
+}
+
+@media screen and (max-width:320px) and (orientation: landscape){
+	body{
+	background: #B3002B;
+    background-image: url(https://www.pngmart.com/files/13/Naruto-Jiraiya-PNG-Transparent-HD-Photo.png);
+    background-size: cover;
+}
+
+.container{
+    font-family: sans-serif;
+    display: flex;
+    font-size: 100px;
+    color: white;
+}
+
+.kakashi { display: none; }
+.naruto { display: none; }
+.jiraiya { display: inline-block; }
+}
+
+@media screen and (max-width:768px) and (orientation: landscape){
+	body{
+	background: #B3002B;
+    background-image: url(https://www.pngmart.com/files/13/Naruto-Jiraiya-PNG-Transparent-HD-Photo.png);
+    background-size: cover;
+}
+
+.container{
+    font-family: sans-serif;
+    display: flex;
+    font-size: 100px;
+    color: white;
+}
+
+.kakashi { display: none; }
+.naruto { display: none; }
+.jiraiya { display: inline-block; }
+}
